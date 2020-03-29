@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<body>
+   
+   <input type="number" id="index" ><input type="button" value="Solve" onclick="solution()">
+   
+   <p id="demo" ></p>
+   
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+   <script type="text/javascript">
+     function solution(){
+      var array = [1, 2, 3, 4, 5];
+      var k = document.getElementById("index").value;
+         array.reverse().splice((k-1), 1);
+         document.getElementById("demo").innerText = array.reverse();
+    }
+   </script>
+</body>
+</html>
